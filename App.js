@@ -9,8 +9,7 @@ export default function App() {
         <ImageBackground source={{ uri: 'https://www.wallpapers13.com/wp-content/uploads/2018/04/Pink-Lily-Flower-with-Beautiful-Pink-Color-Photo-Wallpaper-HD-3840x2160-1600x1200.jpg' }}
 
           resizeMode="cover" style={styles.image}
-        //blurRadius={1  }
-        //style={StyleSheet.absoluteFill}
+       
         >
 
           <View style={{flex:1, backgroundColor: 'rgba(0,0,0,.6)',justifyContent: 'center', alignItems: 'center' }}>
