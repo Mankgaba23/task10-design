@@ -61,11 +61,12 @@ const styles = StyleSheet.create({
     height: 40,
     width: 300,
     color: 'white',
-    backgroundColor: 'pink',
+    fontWeight: 'bold',
+    backgroundColor: '#db00b6',
     borderRadius: 10,
-    borderColor: 'white',
+    //borderColor: 'white',
     textAlign: 'center',
-    borderWidth: 2,
+    //borderWidth: 2,
     marginTop: 20,
     paddingHorizontal: 100,
     paddingVertical: 5,
@@ -74,10 +75,10 @@ const styles = StyleSheet.create({
     margin: 5,
     height: 40,
     width: 300,
-    borderColor: '#daa520',
+    //borderColor: '#daa520',
     borderWidth: 2,
-    color: 'black',
-    backgroundColor: '#fff',
+    //color: 'black',
+    backgroundColor: '#faf0ca',
     borderRadius: 10,
     paddingHorizontal: 15,
     paddingVertical: 10,
@@ -85,13 +86,15 @@ const styles = StyleSheet.create({
 
   },
   TxtWeight: {
-    //fontWeight: 'bold',
+    
     fontSize: 30,
-    paddingBottom: 30,
-    color: 'pink',
+    paddingBottom: 50,
+    color: '#db00b6',
     alignItems: 'center',
     textAlign: 'center',
-    fontFamily: 'Helvetica'
+    fontFamily: 'Helvetica',
+  
+
   },
   image: {
     flex: 1,
@@ -102,16 +105,16 @@ const styles = StyleSheet.create({
 
   },
   Design: {
-    color: 'pink',
-    fontSize: 15,
-    fontFamily: 'roboto',
+    color: 'white',
+    fontSize: 12,
     marginRight: 5,
     marginTop: 50,
+    fontFamily: 'Helvetica',
   },
   Design1: {
-    color: 'white',
+    color: '#db00b6',
     fontSize: 15,
-    fontFamily: 'roboto',
+    fontFamily: 'arial',
     marginRight: 5,
     marginTop: 50,
 
