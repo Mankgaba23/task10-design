@@ -18,10 +18,12 @@ export default function App() {
             <View style={{ justifyContent: 'center', alignItems: 'center' }}>
               <TextInput style={styles.input}
                 placeholder="Username"
+                placeholderTextColor="rgb(50,50,50)"
               />
               <TextInput
                 style={styles.input}
                 placeholder="Password"
+                placeholderTextColor="rgb(50,50,50)"
               />
             </View>
 
@@ -66,23 +68,23 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     //borderColor: 'white',
     textAlign: 'center',
+    textAlignVertical:"center",
     //borderWidth: 2,
     marginTop: 20,
     paddingHorizontal: 100,
-    paddingVertical: 5,
+    paddingVertical: 10,
+    justifyContent:'center',
+    alignContent:'center'
+    
   },
   input: {
     margin: 5,
     height: 40,
     width: 300,
-    //borderColor: '#daa520',
-    borderWidth: 2,
-    //color: 'black',
-    backgroundColor: '#faf0ca',
+    backgroundColor: 'white',
     borderRadius: 10,
     paddingHorizontal: 15,
     paddingVertical: 10,
-
 
   },
   TxtWeight: {
@@ -108,8 +110,12 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 12,
     marginRight: 5,
-    marginTop: 50,
+    marginTop: 51,
     fontFamily: 'Helvetica',
+    textAlign: 'center',
+    justifyContent: 'center',
+    letterSpacing: 1,
+
   },
   Design1: {
     color: '#db00b6',
@@ -117,7 +123,6 @@ const styles = StyleSheet.create({
     fontFamily: 'arial',
     marginRight: 5,
     marginTop: 50,
-
     textAlign: 'center',
     justifyContent: 'center',
   },
