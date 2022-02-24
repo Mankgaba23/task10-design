@@ -38,7 +38,7 @@ const log=({navigation})=> {
 
               <Text style={styles.Design1}>No account ?</Text>
               <TouchableOpacity  >
-                <Text style={styles.Design}>Register</Text>
+                <Text style={styles.Design}>register</Text>
               </TouchableOpacity>
             </View>
           </View>

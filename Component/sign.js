@@ -11,8 +11,8 @@ const sign = ({ navigation }) => {
   return (
     <View style={styles.container}>
 
-      <View style={{justifyContent:"center",alignContent:'center',alignItems:'flex-end'}}>
-      <MaterialIcons name="person" size={24} justifyContent='end' color="blue" margin={30} paddingHorizontal={30} paddingBottom={50} />
+      <View style={{ justifyContent: "center", alignContent: 'center', alignItems: 'flex-end' }}>
+        <MaterialIcons name="person" size={24} justifyContent='end' color="blue" margin={30} paddingHorizontal={30} paddingBottom={50} />
       </View>
 
       <ImageBackground source={{ uri: 'https://www.wallpapers13.com/wp-content/uploads/2018/04/Pink-Lily-Flower-with-Beautiful-Pink-Color-Photo-Wallpaper-HD-3840x2160-1600x1200.jpg' }}
@@ -28,26 +28,59 @@ const sign = ({ navigation }) => {
       <View style={{ justifyContent: 'center', alignItems: 'center', justifyContent: 'space-between' }}>
 
         <TouchableOpacity style={styles.desig}>
-         
           <AntDesign name="upload" size={24} color="blue" />
-          <Text> gh </Text>
+
+          <View style={{ paddingHorizontal: 10, paddingVertical: 5 }}>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 17Feb 2022</Text>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> EWC Tembisa</Text></View>
+
+          <View style={{ paddingHorizontal: 100, paddingVertical: 5, justifyContent: 'flex-end' }} >
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}>-5 Points</Text>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 250pts</Text>
+          </View>
+
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.desig} >
           <AntDesign name="download" size={24} color="blue" paddingHorizontal={20} paddingVertical={10} />
+          <View style={{ paddingHorizontal: 10, paddingVertical: 5 }}>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 17Feb 2022</Text>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> EWC Tembisa</Text></View>
+
+          <View style={{ paddingHorizontal: 100, paddingVertical: 5, justifyContent: 'flex-end' }} >
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 10 Points</Text>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 260pts</Text>
+          </View>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.desig}>
-          <AntDesign name="upload" size={24} color="blue" />
+          <AntDesign name="upload" size={24} color="blue" paddingVertical={10} paddingHorizontal={5} />
+          <View style={{ paddingHorizontal: 10, paddingVertical: 5 }}>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 17Feb 2022</Text>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> EWC Tembisa</Text></View>
+
+          <View style={{ paddingHorizontal: 100, paddingVertical: 5, justifyContent: 'flex-end' }} >
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}>-5 Points</Text>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 250pts</Text>
+          </View>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.desig}>
           <AntDesign name="download" size={24} color="blue" paddingHorizontal={20} paddingVertical={10} />
-          <Text style={{ alignContent: 'center', justifyContent: 'center', justifyContent: "space-around",alignItems:'center', paddingHorizontal:"15"}}></Text>
+          <View style={{ paddingHorizontal: 10, paddingVertical: 5 }}>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 17Feb 2022</Text>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> EWC Tembisa</Text></View>
+
+          <View style={{ paddingHorizontal: 100, paddingVertical: 5, justifyContent: 'flex-end' }} >
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 10 Points</Text>
+            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 260pts</Text>
+          </View>
         </TouchableOpacity>
 
-        <MaterialCommunityIcons name="qrcode-scan" size={24} color="black" paddingHorizontal="15" alignContent="center" justifyContent="center" />
-        
+        <View style={{ paddingTop: 7 }}>
+          <MaterialCommunityIcons name="qrcode-scan" size={24} paddingTop="7"  color="blue" alignContent="center" justifyContent="center" /></View>
+
+
       </View>
     </View>
 
@@ -154,8 +187,9 @@ const styles = StyleSheet.create({
     width: 400,
     height: 50,
     borderRadius: 10,
-    flexDirection:'row',
-    justifyContent:'space-between'
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+    //justifyContent:'flex-start'
   },
 
 });
