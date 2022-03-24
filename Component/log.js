@@ -27,7 +27,7 @@ const log=({navigation})=> {
               />
             </View>
             
-            <TouchableOpacity style= {{ justifyContent: 'center', alignItems: 'center' }} onPress = {() => navigation.navigate('sign')}>
+            <TouchableOpacity style= {{ justifyContent: 'center', alignItems: 'center' }} onPress = {() => navigation.navigate('transaction')}>
               <Text style={styles.lgBtn}>Login</Text>
             </TouchableOpacity>
             <TouchableOpacity  >

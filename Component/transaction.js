@@ -7,7 +7,7 @@ import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
 
-const sign = ({ navigation }) => {
+const transaction = ({ navigation }) => {
   return (
     <View style={styles.container}>
 
@@ -29,25 +29,21 @@ const sign = ({ navigation }) => {
 
         <TouchableOpacity style={styles.desig}>
           <AntDesign name="upload" size={24} color="blue" />
+          <Text style={{ flex: '1', color: 'blue',paddingHorizontal:15,paddingVertical: 5, }}> 19Feb 2022  {'\n'} EWC Tembisa </Text>
 
-          <View style={{ paddingHorizontal: 10, paddingVertical: 5 }}>
-            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 17Feb 2022</Text>
-            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> EWC Tembisa</Text></View>
 
-          <View style={{ paddingHorizontal: 100, paddingVertical: 5, justifyContent: 'flex-end' }} >
-            <Text style={{ flexWrap: 'wrap', color: 'blue' }}>-5 Points</Text>
-            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 250pts</Text>
+          <View style={{ paddingHorizontal: 15, paddingVertical: 5, justifyContent: 'flex-end' }} >
+            <Text style={{ color: 'blue' }}>-5 Points</Text>
+            <Text style={{ color: 'blue' }}> 250pts</Text>
           </View>
 
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.desig} >
-          <AntDesign name="download" size={24} color="blue" paddingHorizontal={20} paddingVertical={10} />
-          <View style={{ paddingHorizontal: 10, paddingVertical: 5 }}>
-            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 17Feb 2022</Text>
-            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> EWC Tembisa</Text></View>
+          <AntDesign name="download" size={24} color="blue" paddingHorizontal={20} paddingVertical={5} />
+          <Text style={{ flex: '1', color: 'blue',paddingHorizontal:15,paddingVertical: 5, }}> 18Feb 2022  {'\n'} EWC Tembisa </Text>
 
-          <View style={{ paddingHorizontal: 100, paddingVertical: 5, justifyContent: 'flex-end' }} >
+          <View style={{ paddingHorizontal: 15, paddingVertical: 5, justifyContent: 'flex-end' }} >
             <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 10 Points</Text>
             <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 260pts</Text>
           </View>
@@ -55,11 +51,10 @@ const sign = ({ navigation }) => {
 
         <TouchableOpacity style={styles.desig}>
           <AntDesign name="upload" size={24} color="blue" paddingVertical={10} paddingHorizontal={5} />
-          <View style={{ paddingHorizontal: 10, paddingVertical: 5 }}>
-            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 17Feb 2022</Text>
-            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> EWC Tembisa</Text></View>
+          <Text style={{ flex: '1', color: 'blue',paddingHorizontal:15,paddingVertical: 5, }}> 17Feb 2022  {'\n'} EWC Tembisa </Text>
 
-          <View style={{ paddingHorizontal: 100, paddingVertical: 5, justifyContent: 'flex-end' }} >
+
+          <View style={{ paddingHorizontal: 15, paddingVertical: 5 }} >
             <Text style={{ flexWrap: 'wrap', color: 'blue' }}>-5 Points</Text>
             <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 250pts</Text>
           </View>
@@ -67,18 +62,22 @@ const sign = ({ navigation }) => {
 
         <TouchableOpacity style={styles.desig}>
           <AntDesign name="download" size={24} color="blue" paddingHorizontal={20} paddingVertical={10} />
-          <View style={{ paddingHorizontal: 10, paddingVertical: 5 }}>
-            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 17Feb 2022</Text>
-            <Text style={{ flexWrap: 'wrap', color: 'blue' }}> EWC Tembisa</Text></View>
 
-          <View style={{ paddingHorizontal: 100, paddingVertical: 5, justifyContent: 'flex-end' }} >
+          <Text style={{ flex: '1', color: 'blue',paddingHorizontal:15,paddingVertical: 5, }}> 16 Feb 2022  {'\n'} EWC Tembisa </Text>
+
+
+          <View style={{ paddingHorizontal: 15, paddingVertical: 5, justifyContent: 'flex-end' }} >
             <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 10 Points</Text>
             <Text style={{ flexWrap: 'wrap', color: 'blue' }}> 260pts</Text>
           </View>
         </TouchableOpacity>
 
-        <View style={{ paddingTop: 7 }}>
-          <MaterialCommunityIcons name="qrcode-scan" size={24} paddingTop="7"  color="blue" alignContent="center" justifyContent="center" /></View>
+        <View style={{ paddingVertical: 30 }}>
+          <MaterialCommunityIcons name="qrcode-scan" size={24}
+            color="blue" alignContent="center" justifyContent="center"
+            paddingTop="6"
+
+          /></View>
 
 
       </View>
@@ -188,9 +187,9 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: 10,
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
     //justifyContent:'flex-start'
   },
 
 });
-export default sign
+export default transaction
